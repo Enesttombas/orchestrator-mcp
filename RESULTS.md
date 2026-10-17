@@ -142,7 +142,7 @@ Six tasks (interval merge, money split, semver, token bucket, cron, weighted LRU
 The real bug: an **empty model answer was classed as non-retryable**, so a task died after one of its three attempts. `Model response did not complete` (SAFETY/OTHER finish) had the same problem. Both are retryable now; the regression test was red before and green after (`test_chaos.py::NativeEmptyAnswers`). These 48 runs predate the fix and were not re-run. `full` vs `clean` stays an **open question**: too few retries (7) to tell, and the failures were provider-side in both arms.
 
 ## 5. Research fidelity
-n<img src="docs/media/viz6.gif" width="860" alt="research fidelity">
+<img src="docs/media/viz6.gif" width="860" alt="research fidelity">
 
 Topic: free-threaded Python, six frozen sources, 12 claims each with a verbatim quote of at most 30 words.
 
