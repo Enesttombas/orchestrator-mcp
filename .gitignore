@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.omc/
+.env*
+*.db
+*.db-*
+.orchestrator/
+backups/
+auth/
+*.log
