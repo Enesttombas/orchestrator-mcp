@@ -9,7 +9,7 @@
 - Context is passed to the model as a JSON data field; embedded instructions are not honoured.
 - No automatic provider/model fallback; execution is disabled unless explicitly enabled.
 
-## Known risks: read before sharing or going public
+## Known risks: read before running
 
 1. **Upstream identity string.** `pool.py` calls the provider's internal quota/generate endpoints
    through a local proxy while sending a client-identifying `User-Agent` (`ORCHESTRATOR_UPSTREAM_UA`)
@@ -22,6 +22,6 @@
    the invoking user's rights. Review diffs before `apply`.
 4. **Local proxies** listen on `127.0.0.1:8401..8415`; never bind them to other interfaces.
 
-## Before making this repo public
+## Before reusing this code
 
-Re-run a secret scan, decide on a licence (currently all-rights-reserved), and resolve risk 1.
+The licence is all-rights-reserved. Resolve risk 1 before running this against any provider account.

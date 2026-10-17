@@ -8,7 +8,6 @@
 ![MCP](https://img.shields.io/badge/MCP-server-6f42c1)
 ![Tests](https://img.shields.io/badge/tests-103%20passing-3fb950)
 ![SQLite](https://img.shields.io/badge/state-SQLite-003B57?logo=sqlite&logoColor=white)
-![Private](https://img.shields.io/badge/repo-private-critical)
 
 <img src="docs/media/tests-terminal.gif" alt="chaos, adversarial and secret-handling tests running" width="860">
 
@@ -91,4 +90,4 @@ Per task: 1–3 attempts, 120 s per command, plus a session-wide attempt cap. La
 
 Task workspaces are temp copies, **not** an OS sandbox: acceptance commands and generated code run with your user rights. Workers see only the files you list; they are not repo-roaming agents. Cancelling an in-flight HTTP call can take up to 120 s. Passing tests do not guarantee success on very large repos or multi-hour jobs.
 
-Status: personal research tool, private repository, all rights reserved ([LICENSE](LICENSE)).
+Status: personal research tool, source public for viewing, all rights reserved ([LICENSE](LICENSE)).
