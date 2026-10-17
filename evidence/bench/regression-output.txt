@@ -1,0 +1,39 @@
+test_active_reset_rejected (test_orchestrator.CoreTests.test_active_reset_rejected) ... ok
+test_actual_acceptance_failure_and_timeout (test_orchestrator.CoreTests.test_actual_acceptance_failure_and_timeout) ... ok
+test_additive_migration_retains_original_rows (test_orchestrator.CoreTests.test_additive_migration_retains_original_rows) ... ok
+test_atomic_fifteen_claims (test_orchestrator.CoreTests.test_atomic_fifteen_claims) ... ok
+test_bad_code_fails_real_test_and_skips_dependent (test_orchestrator.CoreTests.test_bad_code_fails_real_test_and_skips_dependent) ... ok
+test_cancel_rejects_late_result (test_orchestrator.CoreTests.test_cancel_rejects_late_result) ... ok
+test_cannot_finish_before_claim_or_wrong_owner (test_orchestrator.CoreTests.test_cannot_finish_before_claim_or_wrong_owner) ... ok
+test_child_applies_after_accepted_parent (test_orchestrator.CoreTests.test_child_applies_after_accepted_parent) ... ok
+test_configuration_immutable_after_claim (test_orchestrator.CoreTests.test_configuration_immutable_after_claim) ... ok
+test_dead_runner_recovered_without_lease_timeout (test_orchestrator.CoreTests.test_dead_runner_recovered_without_lease_timeout) ... ok
+test_deleted_existing_source_is_conflict (test_orchestrator.CoreTests.test_deleted_existing_source_is_conflict) ... ok
+test_dirty_source_rejects_application (test_orchestrator.CoreTests.test_dirty_source_rejects_application) ... ok
+test_duplicate_finish_idempotent_and_terminal_immediate (test_orchestrator.CoreTests.test_duplicate_finish_idempotent_and_terminal_immediate) ... ok
+test_evidence_required (test_orchestrator.CoreTests.test_evidence_required) ... ok
+test_expired_lease_rejects_late_result (test_orchestrator.CoreTests.test_expired_lease_rejects_late_result) ... ok
+test_failed_acceptance_feedback_reaches_retry (test_orchestrator.CoreTests.test_failed_acceptance_feedback_reaches_retry) ... ok
+test_failure_cascades_and_reset_clears_all (test_orchestrator.CoreTests.test_failure_cascades_and_reset_clears_all) ... ok
+test_fifteen_parallel_workspaces (test_orchestrator.CoreTests.test_fifteen_parallel_workspaces) ... ok
+test_max_iterations_enforced_at_claim (test_orchestrator.CoreTests.test_max_iterations_enforced_at_claim) ... ok
+test_no_capacity_keeps_work_and_retry_budget (test_orchestrator.CoreTests.test_no_capacity_keeps_work_and_retry_budget) ... ok
+test_os_lock_releases_after_process_crash (test_orchestrator.CoreTests.test_os_lock_releases_after_process_crash) ... ok
+test_output_scope_validation (test_orchestrator.CoreTests.test_output_scope_validation) ... ok
+test_path_traversal_and_windows_forms_rejected (test_orchestrator.CoreTests.test_path_traversal_and_windows_forms_rejected) ... ok
+test_pool_disabled_and_unknown_quota_rejected (test_orchestrator.CoreTests.test_pool_disabled_and_unknown_quota_rejected) ... ok
+test_quota_errors_replace_stale_success (test_orchestrator.CoreTests.test_quota_errors_replace_stale_success) ... ok
+test_quota_parser_weekly_short_and_bad_values (test_orchestrator.CoreTests.test_quota_parser_weekly_short_and_bad_values) ... ok
+test_quota_windows_are_separate_and_not_rounded_to_full (test_orchestrator.CoreTests.test_quota_windows_are_separate_and_not_rounded_to_full) ... ok
+test_rejects_missing_dependency_duplicate_and_cycle (test_orchestrator.CoreTests.test_rejects_missing_dependency_duplicate_and_cycle) ... ok
+test_retry_429_is_bounded_and_accounts_cooldown (test_orchestrator.CoreTests.test_retry_429_is_bounded_and_accounts_cooldown) ... ok
+test_runner_acceptance_apply_and_dirty_preservation (test_orchestrator.CoreTests.test_runner_acceptance_apply_and_dirty_preservation) ... ok
+test_same_owner_resume_no_double_count (test_orchestrator.CoreTests.test_same_owner_resume_no_double_count) ... ok
+test_two_pool_instances_cannot_share_account (test_orchestrator.CoreTests.test_two_pool_instances_cannot_share_account) ... ok
+test_unicode_bytes_and_no_overwrite (test_orchestrator.CoreTests.test_unicode_bytes_and_no_overwrite) ... ok
+test_stdio_restart_and_real_command_evidence (test_orchestrator.WireTests.test_stdio_restart_and_real_command_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 11.401s
+
+OK

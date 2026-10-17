@@ -1,0 +1,170 @@
+[
+ {
+  "run": "matrix-live",
+  "task": "BUG-3",
+  "prompt_tokens": 610,
+  "completion_tokens": 997
+ },
+ {
+  "run": "matrix-live",
+  "task": "BIG-1",
+  "prompt_tokens": 2594,
+  "completion_tokens": 326
+ },
+ {
+  "run": "matrix-live",
+  "task": "BIG-2",
+  "prompt_tokens": 2536,
+  "completion_tokens": 86
+ },
+ {
+  "run": "matrix-live",
+  "task": "MULTI-1",
+  "prompt_tokens": 528,
+  "completion_tokens": 159
+ },
+ {
+  "run": "matrix-live",
+  "task": "MULTI-2",
+  "prompt_tokens": 484,
+  "completion_tokens": 146
+ },
+ {
+  "run": "matrix-live",
+  "task": "BUG-3",
+  "prompt_tokens": 610,
+  "completion_tokens": 987
+ },
+ {
+  "run": "matrix-live",
+  "task": "BIG-1",
+  "prompt_tokens": 2594,
+  "completion_tokens": 308
+ },
+ {
+  "run": "matrix-live",
+  "task": "BIG-2",
+  "prompt_tokens": 2536,
+  "completion_tokens": 89
+ },
+ {
+  "run": "matrix-live",
+  "task": "MULTI-1",
+  "prompt_tokens": 528,
+  "completion_tokens": 159
+ },
+ {
+  "run": "matrix-live",
+  "task": "MULTI-2",
+  "prompt_tokens": 484,
+  "completion_tokens": 145
+ },
+ {
+  "run": "matrix-live2",
+  "task": "BIG-1",
+  "prompt_tokens": 2594,
+  "completion_tokens": 331
+ },
+ {
+  "run": "matrix-live2",
+  "task": "BIG-2",
+  "prompt_tokens": 2536,
+  "completion_tokens": 2229
+ },
+ {
+  "run": "matrix-live2",
+  "task": "MULTI-1",
+  "prompt_tokens": 528,
+  "completion_tokens": 159
+ },
+ {
+  "run": "matrix-live2",
+  "task": "MULTI-2",
+  "prompt_tokens": 484,
+  "completion_tokens": 145
+ },
+ {
+  "run": "matrix-live2",
+  "task": "BIG-1",
+  "prompt_tokens": 2594,
+  "completion_tokens": 331
+ },
+ {
+  "run": "matrix-live2",
+  "task": "BIG-2",
+  "prompt_tokens": 2536,
+  "completion_tokens": 86
+ },
+ {
+  "run": "matrix-live2",
+  "task": "MULTI-1",
+  "prompt_tokens": 528,
+  "completion_tokens": 159
+ },
+ {
+  "run": "matrix-live2",
+  "task": "MULTI-2",
+  "prompt_tokens": 484,
+  "completion_tokens": 155
+ },
+ {
+  "run": "matrix-final",
+  "task": "BUG-3",
+  "prompt_tokens": 610,
+  "completion_tokens": 1178
+ },
+ {
+  "run": "matrix-final",
+  "task": "BIG-1",
+  "prompt_tokens": 2594,
+  "completion_tokens": 296
+ },
+ {
+  "run": "matrix-final",
+  "task": "BIG-2",
+  "prompt_tokens": 2536,
+  "completion_tokens": 975
+ },
+ {
+  "run": "matrix-final",
+  "task": "MULTI-1",
+  "prompt_tokens": 528,
+  "completion_tokens": 159
+ },
+ {
+  "run": "matrix-final",
+  "task": "MULTI-2",
+  "prompt_tokens": 484,
+  "completion_tokens": 153
+ },
+ {
+  "run": "matrix-final",
+  "task": "BUG-3",
+  "prompt_tokens": 610,
+  "completion_tokens": 1183
+ },
+ {
+  "run": "matrix-final",
+  "task": "BIG-1",
+  "prompt_tokens": 2594,
+  "completion_tokens": 323
+ },
+ {
+  "run": "matrix-final",
+  "task": "BIG-2",
+  "prompt_tokens": 2536,
+  "completion_tokens": 89
+ },
+ {
+  "run": "matrix-final",
+  "task": "MULTI-1",
+  "prompt_tokens": 528,
+  "completion_tokens": 159
+ },
+ {
+  "run": "matrix-final",
+  "task": "MULTI-2",
+  "prompt_tokens": 484,
+  "completion_tokens": 148
+ }
+]

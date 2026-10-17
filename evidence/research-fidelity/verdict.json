@@ -1,0 +1,57 @@
+{
+  "X": {
+    "supported": 11,
+    "partial": 1,
+    "unsupported": 0,
+    "topics_covered": 8,
+    "topics": {"1": "yes", "2": "yes", "3": "yes", "4": "yes", "5": "yes", "6": "yes", "7": "yes", "8": "yes"},
+    "claims": {
+      "1": {"label": "PARTIAL", "why": "Quote backs only the SC acceptance with gradual-rollout proviso; the 'proposes a build option without the GIL' half is not in the quote or its immediate context (SC note)."},
+      "2": {"label": "SUPPORTED", "why": "Verbatim S2 phase description; covers phases, not the concrete criteria."},
+      "3": {"label": "SUPPORTED", "why": "S6 Free-threaded CPython section."},
+      "4": {"label": "SUPPORTED", "why": "S4 'Free-threaded Python is officially supported' section."},
+      "5": {"label": "SUPPORTED", "why": "S3 'Identifying free-threaded Python'; detection only, PYTHON_GIL/-X gil not mentioned."},
+      "6": {"label": "SUPPORTED", "why": "S4; platform/compiler qualifier kept in quote."},
+      "7": {"label": "SUPPORTED", "why": "S5 high-level summary; 'given sufficient isolation' qualifier kept."},
+      "8": {"label": "SUPPORTED", "why": "Quote truncated before 'and doing so may crash the interpreter', but the very next words in S3 back the crash part."},
+      "9": {"label": "SUPPORTED", "why": "S3 'Increased memory usage'."},
+      "10": {"label": "SUPPORTED", "why": "S3 intro; source says 'third-party packages, in particular ones with an extension module', close paraphrase."},
+      "11": {"label": "SUPPORTED", "why": "S4 JIT section."},
+      "12": {"label": "SUPPORTED", "why": "S4; note 3.14 notes say phase III is 'still undecided'."}
+    },
+    "notes": [
+      "All 12 quotes found verbatim (whitespace-normalized) in the cited files.",
+      "Claim 1 asserts what PEP 703 proposes but its quote only covers acceptance; it also drops the 'roll back any changes' part of the proviso.",
+      "Claims 2 and 12 overlap (phase III default); the topic 2 criteria (performance/memory targets) are not given, only the phase definitions.",
+      "No outdated-status-as-current problems found; 3.13 and 3.14 status are scoped to their release."
+    ]
+  },
+  "Y": {
+    "supported": 11,
+    "partial": 1,
+    "unsupported": 0,
+    "topics_covered": 7,
+    "topics": {"1": "no", "2": "yes", "3": "yes", "4": "yes", "5": "yes", "6": "yes", "7": "yes", "8": "yes"},
+    "claims": {
+      "1": {"label": "SUPPORTED", "why": "S1 SC note, includes the roll-back clause."},
+      "2": {"label": "SUPPORTED", "why": "S2 phase II criteria; 'at the time' correctly qualifies the 10% figure."},
+      "3": {"label": "SUPPORTED", "why": "S6."},
+      "4": {"label": "SUPPORTED", "why": "S4."},
+      "5": {"label": "SUPPORTED", "why": "S3 'The global interpreter lock in free-threaded Python'."},
+      "6": {"label": "SUPPORTED", "why": "S4; platform/compiler qualifier dropped from claim but kept in quote, minor."},
+      "7": {"label": "PARTIAL", "why": "Claim drops the 'given sufficient isolation' qualifier and adds 'enabling interpreter isolation and multi-core parallelism', which is not in the quote (nearby S5 text mentions it only as the goal)."},
+      "8": {"label": "SUPPORTED", "why": "S3 Frame objects; 'concurrently' is a fair paraphrase."},
+      "9": {"label": "SUPPORTED", "why": "S1 backwards compatibility section."},
+      "10": {"label": "SUPPORTED", "why": "S4."},
+      "11": {"label": "SUPPORTED", "why": "S3 'Identifying free-threaded Python'."},
+      "12": {"label": "SUPPORTED", "why": "Quote is verbatim S2, but see notes: dated figure presented as current."}
+    },
+    "notes": [
+      "All 12 quotes found verbatim (whitespace-normalized) in the cited files.",
+      "Topic 1 not adequately covered: claim 1 gives only the acceptance/proviso, never states what PEP 703 proposes (removing the GIL / --disable-gil build).",
+      "Claim 12 is misleading: 'currently ... 15-20% higher memory use' is PEP 779's at-time-of-writing status (pre-3.14 phase II), restated as present-tense fact with no date/version qualifier.",
+      "Claim 9 comes from PEP 703, which S1 itself marks as a historical document; stated in present tense without version scope (likely still true for 3.13/3.14, but not established by the cited source).",
+      "Claim 7 overreaches its quote (see claim label). Claims 5 and 11 together give both runtime control (PYTHON_GIL, -X gil) and detection, a stronger topic-5 answer than X's."
+    ]
+  }
+}

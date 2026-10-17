@@ -1,0 +1,8 @@
+{
+  "protocol": "2025-06-18",
+  "pending_reviewer_accepted_without_dependencies": true,
+  "unknown_task_accepted": true,
+  "iteration_after_two_unverified_reports": 2,
+  "dispatch_after_limit": "EXECUTE_TASK",
+  "artifact_escaped_root": true
+}

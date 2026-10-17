@@ -1,0 +1,45 @@
+{
+  "mode": "live",
+  "tasks": 6,
+  "repeats": 2,
+  "runs": [
+    {
+      "session_id": "ses_c6643ca4b5544ea9",
+      "status": "COMPLETED",
+      "seconds": 5.52,
+      "passed": 6,
+      "total": 6,
+      "first_pass": 6,
+      "attempts": 6,
+      "accounts": 6,
+      "prompt_tokens": 1374,
+      "completion_tokens": 389,
+      "total_tokens": 1763,
+      "calls": 6,
+      "calls_without_usage": 0
+    },
+    {
+      "session_id": "ses_641c77b0717b43d1",
+      "status": "COMPLETED",
+      "seconds": 4.717,
+      "passed": 6,
+      "total": 6,
+      "first_pass": 6,
+      "attempts": 6,
+      "accounts": 6,
+      "prompt_tokens": 1374,
+      "completion_tokens": 460,
+      "total_tokens": 1834,
+      "calls": 6,
+      "calls_without_usage": 0
+    }
+  ],
+  "summary": {
+    "runs": 2,
+    "pass_rate": 1.0,
+    "first_pass_rate": 1.0,
+    "seconds_mean": 5.118,
+    "total_tokens_mean": 1798.5,
+    "completion_tokens_mean": 424.5
+  }
+}

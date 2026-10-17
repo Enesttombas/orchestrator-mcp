@@ -1,0 +1,74 @@
+[
+ {
+  "mode": "full",
+  "rep": 1,
+  "task": "H-INTERVALS",
+  "ok": true,
+  "status": "COMPLETED",
+  "attempts": 1,
+  "tokens": 1623,
+  "wall": 37.2,
+  "session": "COMPLETED",
+  "error": ""
+ },
+ {
+  "mode": "full",
+  "rep": 1,
+  "task": "H-MONEY",
+  "ok": true,
+  "status": "COMPLETED",
+  "attempts": 1,
+  "tokens": 3240,
+  "wall": 37.2,
+  "session": "COMPLETED",
+  "error": ""
+ },
+ {
+  "mode": "full",
+  "rep": 1,
+  "task": "H-SEMVER",
+  "ok": true,
+  "status": "COMPLETED",
+  "attempts": 2,
+  "tokens": 4075,
+  "wall": 37.2,
+  "session": "COMPLETED",
+  "error": ""
+ },
+ {
+  "mode": "full",
+  "rep": 1,
+  "task": "H-BUCKET",
+  "ok": true,
+  "status": "COMPLETED",
+  "attempts": 1,
+  "tokens": 1309,
+  "wall": 37.2,
+  "session": "COMPLETED",
+  "error": ""
+ },
+ {
+  "mode": "full",
+  "rep": 1,
+  "task": "H-CRON",
+  "ok": true,
+  "status": "COMPLETED",
+  "attempts": 1,
+  "tokens": 3122,
+  "wall": 37.2,
+  "session": "COMPLETED",
+  "error": ""
+ },
+ {
+  "mode": "full",
+  "rep": 1,
+  "task": "H-WLRU",
+  "ok": true,
+  "status": "COMPLETED",
+  "attempts": 1,
+  "tokens": 1835,
+  "wall": 37.2,
+  "session": "COMPLETED",
+  "error": ""
+ }
+]

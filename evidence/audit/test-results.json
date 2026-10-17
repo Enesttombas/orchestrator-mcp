@@ -1,0 +1,117 @@
+{
+  "source": "~\\.gemini\\antigravity\\mcp_servers\\orchestrator",
+  "python": "~\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "source_sha256": {
+    "dag.py": "702484984b3aefe5da4b6e008646b5c81f54d1364bf9ca94bc4b8334f70b41a9",
+    "db.py": "a160070a47f95498468a06a9e3bc2da802bc1480ab40fa7c94229334fabda0ce",
+    "run_benchmark.py": "9b6aebedcc866d154fa4751666a77a67fa57c4d3dada3baf85614db06c067557",
+    "server.py": "654c3c3133237ac85607beac70033a235716d12a7b015d5d182651c386f29f1c",
+    "test_orchestrator.py": "5c64fe4c15cdccf4dc675025b8d01587e3f69f2ca4ffde6f32fe0e2815a16ba3"
+  },
+  "tests_run": 22,
+  "failures": 10,
+  "errors": 0,
+  "exit_code": 1,
+  "tests": [
+    {
+      "test": "test_orchestrator.TestOrchestratorSuite.test_dag_cycle_detection",
+      "status": "PASS"
+    },
+    {
+      "test": "test_orchestrator.TestOrchestratorSuite.test_database_creation_and_wal_mode",
+      "status": "PASS"
+    },
+    {
+      "test": "test_orchestrator.TestOrchestratorSuite.test_failure_cascading",
+      "status": "PASS"
+    },
+    {
+      "test": "test_orchestrator.TestOrchestratorSuite.test_list_sessions",
+      "status": "PASS"
+    },
+    {
+      "test": "test_orchestrator.TestOrchestratorSuite.test_reset_session",
+      "status": "PASS"
+    },
+    {
+      "test": "test_orchestrator.TestOrchestratorSuite.test_staged_pipeline_end_to_end",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.WireSmoke.test_handshake_and_eight_tools",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.WireSmoke.test_real_local_command_and_roundtrip",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.WireSmoke.test_wire_boundary_characterization",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.WireSmoke.test_wire_missing_required_argument_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.WireSmoke.test_wire_nonzero_exit_blocks_dependents",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.WireSmoke.test_wire_process_restart_resumes_task",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.Boundaries.test_artifact_cannot_escape_artifact_root",
+      "status": "FAIL",
+      "detail": "False is not true : ~\\AppData\\Local\\Temp\\mcp-orchestrator-audit-xfzd_lk8\\test_artifact_cannot_escape_artifact_root\\escaped\\T1_probe.txt"
+    },
+    {
+      "test": "__main__.Boundaries.test_cannot_complete_pending_reviewer_before_dependencies",
+      "status": "FAIL",
+      "detail": "'COMPLETED' == 'COMPLETED'"
+    },
+    {
+      "test": "__main__.Boundaries.test_duplicate_result_is_idempotent",
+      "status": "FAIL",
+      "detail": "2 != 1"
+    },
+    {
+      "test": "__main__.Boundaries.test_independent_tasks_can_be_claimed_separately",
+      "status": "FAIL",
+      "detail": "'A' == 'A' : A second client receives the same in-progress task; no worker ownership"
+    },
+    {
+      "test": "__main__.Boundaries.test_iteration_limit_stops_dispatch",
+      "status": "FAIL",
+      "detail": "'EXECUTE_TASK' == 'EXECUTE_TASK' : Dispatched next stage after configured limit"
+    },
+    {
+      "test": "__main__.Boundaries.test_missing_dependency_is_rejected",
+      "status": "FAIL",
+      "detail": "'task_added' != 'error'\n- task_added\n+ error\n : Unresolvable dependency was stored"
+    },
+    {
+      "test": "__main__.Boundaries.test_record_completion_updates_session_status",
+      "status": "FAIL",
+      "detail": "'RUNNING' != 'COMPLETED'\n- RUNNING\n+ COMPLETED\n"
+    },
+    {
+      "test": "__main__.Boundaries.test_reset_clears_previous_failure_metadata",
+      "status": "FAIL",
+      "detail": "7 is not None"
+    },
+    {
+      "test": "__main__.Boundaries.test_success_requires_independent_acceptance_evidence",
+      "status": "FAIL",
+      "detail": "True is not false : Caller-supplied SUCCESS and default rc=0 were trusted without evidence"
+    },
+    {
+      "test": "__main__.Boundaries.test_unknown_task_does_not_count_as_success",
+      "status": "FAIL",
+      "detail": "True is not false : Unknown task was reported as accepted"
+    }
+  ],
+  "network_or_model_calls": 0,
+  "database_scope": "temporary isolated database"
+}

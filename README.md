@@ -30,6 +30,24 @@ Handing work to cheap model workers is easy. Trusting what they say is not: a wo
 - **Hash-checked apply.** Accepted output is applied with backups and source-hash checks; if you edited the file meanwhile, apply refuses instead of overwriting.
 - **Adversarial hygiene.** Context reaches the model only as a JSON data field; injected instructions cannot widen scope; secret-shaped output is refused and never written; binary, NUL and oversized output is rejected; Windows device names are refused.
 
+## Results at a glance
+
+<img src="docs/media/scene4.gif" width="780" alt="before and after the rebuild">
+
+| What was tested | Result |
+|---|---|
+| Original server, independent boundary audit | 12/22 (10 failures) |
+| Rebuilt server, offline suite | 103 tests pass |
+| Live, 15 different accounts, installed config | 16/16, every acceptance command exit 0 |
+| Domain matrix, 9 domains x 2 repeats | 44/46 (96%) |
+| 30-task DAG, live | 30/30 in 20.6 s |
+| Sonnet solo vs Gemini orchestration | about half the net Claude tokens, 21% faster, same code quality |
+| Research quotes checked mechanically | 2 of 60 worker quotes were fabricated and caught |
+
+<img src="docs/media/scene1.gif" width="780" alt="Sonnet vs Gemini orchestration">
+
+Full tables, per-task data, the three security holes and the one real bug the tests found: **[RESULTS.md](RESULTS.md)**. Raw JSON, scorers and original reports are in [`evidence/`](evidence/).
+
 ## Architecture
 
 <img src="docs/media/architecture.svg" alt="architecture" width="860">
@@ -84,6 +102,7 @@ Per task: 1–3 attempts, 120 s per command, plus a session-wide attempt cap. La
 | `test_adversarial` | acceptance hijack, injection, giant/binary output |
 | `test_secrets` | secret-shape detection, never echoed or written |
 | `test_adaptive`, `test_edits`, `test_plan_overlap`, `test_speed`, `test_bench` | scheduling, edit application, overlap rules, timing |
+| `evidence/` | live matrix, hard tasks, 30-task DAG, Sonnet comparison: see [RESULTS.md](RESULTS.md) |
 | `evals/` | held-out benchmark harness (needs live quota; not run by default) |
 
 ## Limits

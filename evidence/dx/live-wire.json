@@ -1,0 +1,14 @@
+{
+ "tools": 18,
+ "status": "COMPLETED",
+ "attempts": 1,
+ "apply": {
+  "applied": [
+   "calc.py"
+  ],
+  "rejected": {},
+  "not_completed": []
+ },
+ "check_rc": 0,
+ "seconds": 6.3
+}

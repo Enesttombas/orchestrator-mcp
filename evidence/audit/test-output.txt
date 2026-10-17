@@ -1,0 +1,131 @@
+test_dag_cycle_detection (test_orchestrator.TestOrchestratorSuite.test_dag_cycle_detection)
+Verifies that adding circular dependencies raises DAGCycleError. ... ok
+test_database_creation_and_wal_mode (test_orchestrator.TestOrchestratorSuite.test_database_creation_and_wal_mode)
+Verifies DB tables and WAL journal mode. ... ok
+test_failure_cascading (test_orchestrator.TestOrchestratorSuite.test_failure_cascading)
+Verifies that a failure in an upstream task cascades SKIPPED to downstream tasks. ... ok
+test_list_sessions (test_orchestrator.TestOrchestratorSuite.test_list_sessions)
+Verifies listing multiple sessions. ... ok
+test_reset_session (test_orchestrator.TestOrchestratorSuite.test_reset_session)
+Verifies that orchestrator_reset_session resets failed and skipped tasks back to PENDING. ... ok
+test_staged_pipeline_end_to_end (test_orchestrator.TestOrchestratorSuite.test_staged_pipeline_end_to_end)
+Tests complete staged pipeline execution flow through MCP tools. ... ok
+test_handshake_and_eight_tools (__main__.WireSmoke.test_handshake_and_eight_tools) ... ok
+test_real_local_command_and_roundtrip (__main__.WireSmoke.test_real_local_command_and_roundtrip) ... ok
+test_wire_boundary_characterization (__main__.WireSmoke.test_wire_boundary_characterization) ... ok
+test_wire_missing_required_argument_rejected (__main__.WireSmoke.test_wire_missing_required_argument_rejected) ... ok
+test_wire_nonzero_exit_blocks_dependents (__main__.WireSmoke.test_wire_nonzero_exit_blocks_dependents) ... ok
+test_wire_process_restart_resumes_task (__main__.WireSmoke.test_wire_process_restart_resumes_task) ... ok
+test_artifact_cannot_escape_artifact_root (__main__.Boundaries.test_artifact_cannot_escape_artifact_root) ... FAIL
+test_cannot_complete_pending_reviewer_before_dependencies (__main__.Boundaries.test_cannot_complete_pending_reviewer_before_dependencies) ... FAIL
+test_duplicate_result_is_idempotent (__main__.Boundaries.test_duplicate_result_is_idempotent) ... FAIL
+test_independent_tasks_can_be_claimed_separately (__main__.Boundaries.test_independent_tasks_can_be_claimed_separately) ... FAIL
+test_iteration_limit_stops_dispatch (__main__.Boundaries.test_iteration_limit_stops_dispatch) ... FAIL
+test_missing_dependency_is_rejected (__main__.Boundaries.test_missing_dependency_is_rejected) ... FAIL
+test_record_completion_updates_session_status (__main__.Boundaries.test_record_completion_updates_session_status) ... FAIL
+test_reset_clears_previous_failure_metadata (__main__.Boundaries.test_reset_clears_previous_failure_metadata) ... FAIL
+test_success_requires_independent_acceptance_evidence (__main__.Boundaries.test_success_requires_independent_acceptance_evidence) ... FAIL
+test_unknown_task_does_not_count_as_success (__main__.Boundaries.test_unknown_task_does_not_count_as_success) ... FAIL
+
+======================================================================
+FAIL: test_artifact_cannot_escape_artifact_root (__main__.Boundaries.test_artifact_cannot_escape_artifact_root)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~\Documents\repo\work\mcp-orchestrator-audit-20261016\audit.py", line 214, in test_artifact_cannot_escape_artifact_root
+    self.assertTrue(target.is_relative_to((self.case / 'artifacts').resolve()), str(target))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ~\AppData\Local\Temp\mcp-orchestrator-audit-xfzd_lk8\test_artifact_cannot_escape_artifact_root\escaped\T1_probe.txt
+
+======================================================================
+FAIL: test_cannot_complete_pending_reviewer_before_dependencies (__main__.Boundaries.test_cannot_complete_pending_reviewer_before_dependencies)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~\Documents\repo\work\mcp-orchestrator-audit-20261016\audit.py", line 191, in test_cannot_complete_pending_reviewer_before_dependencies
+    self.assertNotEqual(self.db.get_task(self.sid, 'T3_REVIEW')['status'], 'COMPLETED')
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'COMPLETED' == 'COMPLETED'
+
+======================================================================
+FAIL: test_duplicate_result_is_idempotent (__main__.Boundaries.test_duplicate_result_is_idempotent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~\Documents\repo\work\mcp-orchestrator-audit-20261016\audit.py", line 202, in test_duplicate_result_is_idempotent
+    self.assertEqual(self.db.get_session(self.sid)['iteration'], 1)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2 != 1
+
+======================================================================
+FAIL: test_independent_tasks_can_be_claimed_separately (__main__.Boundaries.test_independent_tasks_can_be_claimed_separately)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~\Documents\repo\work\mcp-orchestrator-audit-20261016\audit.py", line 235, in test_independent_tasks_can_be_claimed_separately
+    self.assertNotEqual(first['task']['task_id'], second['task']['task_id'],
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        'A second client receives the same in-progress task; no worker ownership')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'A' == 'A' : A second client receives the same in-progress task; no worker ownership
+
+======================================================================
+FAIL: test_iteration_limit_stops_dispatch (__main__.Boundaries.test_iteration_limit_stops_dispatch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~\Documents\repo\work\mcp-orchestrator-audit-20261016\audit.py", line 209, in test_iteration_limit_stops_dispatch
+    self.assertNotEqual(next_action['action'], 'EXECUTE_TASK', 'Dispatched next stage after configured limit')
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'EXECUTE_TASK' == 'EXECUTE_TASK' : Dispatched next stage after configured limit
+
+======================================================================
+FAIL: test_missing_dependency_is_rejected (__main__.Boundaries.test_missing_dependency_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~\Documents\repo\work\mcp-orchestrator-audit-20261016\audit.py", line 227, in test_missing_dependency_is_rejected
+    self.assertEqual(result.get('status'), 'error', 'Unresolvable dependency was stored')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'task_added' != 'error'
+- task_added
++ error
+ : Unresolvable dependency was stored
+
+======================================================================
+FAIL: test_record_completion_updates_session_status (__main__.Boundaries.test_record_completion_updates_session_status)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~\Documents\repo\work\mcp-orchestrator-audit-20261016\audit.py", line 243, in test_record_completion_updates_session_status
+    self.assertEqual(state['session']['status'], 'COMPLETED')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RUNNING' != 'COMPLETED'
+- RUNNING
++ COMPLETED
+
+
+======================================================================
+FAIL: test_reset_clears_previous_failure_metadata (__main__.Boundaries.test_reset_clears_previous_failure_metadata)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~\Documents\repo\work\mcp-orchestrator-audit-20261016\audit.py", line 221, in test_reset_clears_previous_failure_metadata
+    self.assertIsNone(task['exit_code'])
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: 7 is not None
+
+======================================================================
+FAIL: test_success_requires_independent_acceptance_evidence (__main__.Boundaries.test_success_requires_independent_acceptance_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~\Documents\repo\work\mcp-orchestrator-audit-20261016\audit.py", line 187, in test_success_requires_independent_acceptance_evidence
+    self.assertFalse(result['is_gate_passed'], 'Caller-supplied SUCCESS and default rc=0 were trusted without evidence')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : Caller-supplied SUCCESS and default rc=0 were trusted without evidence
+
+======================================================================
+FAIL: test_unknown_task_does_not_count_as_success (__main__.Boundaries.test_unknown_task_does_not_count_as_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "~\Documents\repo\work\mcp-orchestrator-audit-20261016\audit.py", line 195, in test_unknown_task_does_not_count_as_success
+    self.assertFalse(result.get('is_gate_passed', False), 'Unknown task was reported as accepted')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : Unknown task was reported as accepted
+
+----------------------------------------------------------------------
+Ran 22 tests in 11.381s
+
+FAILED (failures=10)

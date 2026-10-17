@@ -1,0 +1,281 @@
+{
+ "session": "COMPLETED",
+ "wall_seconds": 20.6,
+ "passed": 30,
+ "total": 30,
+ "retried": 0,
+ "tokens": 14276,
+ "rejected_on_apply": null,
+ "rows": [
+  {
+   "task": "L00",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 422,
+   "model_seconds": 3.975,
+   "error": ""
+  },
+  {
+   "task": "L01",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 380,
+   "model_seconds": 2.668,
+   "error": ""
+  },
+  {
+   "task": "L02",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 380,
+   "model_seconds": 3.499,
+   "error": ""
+  },
+  {
+   "task": "L03",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 380,
+   "model_seconds": 2.94,
+   "error": ""
+  },
+  {
+   "task": "L04",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 424,
+   "model_seconds": 4.228,
+   "error": ""
+  },
+  {
+   "task": "L05",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 380,
+   "model_seconds": 3.64,
+   "error": ""
+  },
+  {
+   "task": "L06",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 380,
+   "model_seconds": 2.413,
+   "error": ""
+  },
+  {
+   "task": "L07",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 380,
+   "model_seconds": 3.894,
+   "error": ""
+  },
+  {
+   "task": "L08",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 381,
+   "model_seconds": 3.551,
+   "error": ""
+  },
+  {
+   "task": "L09",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 380,
+   "model_seconds": 3.115,
+   "error": ""
+  },
+  {
+   "task": "L10",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 384,
+   "model_seconds": 2.892,
+   "error": ""
+  },
+  {
+   "task": "L11",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 384,
+   "model_seconds": 3.946,
+   "error": ""
+  },
+  {
+   "task": "L12",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 384,
+   "model_seconds": 4.439,
+   "error": ""
+  },
+  {
+   "task": "L13",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 384,
+   "model_seconds": 2.886,
+   "error": ""
+  },
+  {
+   "task": "L14",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 384,
+   "model_seconds": 3.018,
+   "error": ""
+  },
+  {
+   "task": "L15",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 384,
+   "model_seconds": 3.402,
+   "error": ""
+  },
+  {
+   "task": "L16",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 384,
+   "model_seconds": 2.416,
+   "error": ""
+  },
+  {
+   "task": "L17",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 384,
+   "model_seconds": 3.52,
+   "error": ""
+  },
+  {
+   "task": "L18",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 384,
+   "model_seconds": 2.363,
+   "error": ""
+  },
+  {
+   "task": "L19",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 384,
+   "model_seconds": 2.731,
+   "error": ""
+  },
+  {
+   "task": "M0",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 563,
+   "model_seconds": 4.525,
+   "error": ""
+  },
+  {
+   "task": "M1",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 557,
+   "model_seconds": 3.245,
+   "error": ""
+  },
+  {
+   "task": "M2",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 562,
+   "model_seconds": 2.707,
+   "error": ""
+  },
+  {
+   "task": "M3",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 559,
+   "model_seconds": 2.705,
+   "error": ""
+  },
+  {
+   "task": "M4",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 567,
+   "model_seconds": 2.649,
+   "error": ""
+  },
+  {
+   "task": "M5",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 571,
+   "model_seconds": 3.339,
+   "error": ""
+  },
+  {
+   "task": "M6",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 570,
+   "model_seconds": 3.847,
+   "error": ""
+  },
+  {
+   "task": "M7",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 571,
+   "model_seconds": 2.834,
+   "error": ""
+  },
+  {
+   "task": "F1",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 997,
+   "model_seconds": 3.979,
+   "error": ""
+  },
+  {
+   "task": "F2",
+   "ok": true,
+   "status": "COMPLETED",
+   "attempts": 1,
+   "tokens": 1032,
+   "model_seconds": 3.972,
+   "error": ""
+  }
+ ]
+}
