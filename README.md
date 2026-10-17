@@ -32,7 +32,9 @@ Handing work to cheap model workers is easy. Trusting what they say is not: a wo
 
 ## Results at a glance
 
-<img src="docs/media/scene4.gif" width="780" alt="before and after the rebuild">
+<img src="docs/media/viz1.gif" width="860" alt="headline results">
+
+<img src="docs/media/viz5.gif" width="860" alt="before and after the rebuild">
 
 | What was tested | Result |
 |---|---|
@@ -44,7 +46,7 @@ Handing work to cheap model workers is easy. Trusting what they say is not: a wo
 | Sonnet solo vs Gemini orchestration | about half the net Claude tokens, 21% faster, same code quality |
 | Research quotes checked mechanically | 2 of 60 worker quotes were fabricated and caught |
 
-<img src="docs/media/scene1.gif" width="780" alt="Sonnet vs Gemini orchestration">
+<img src="docs/media/viz2.gif" width="860" alt="Sonnet vs Gemini orchestration">
 
 Full tables, per-task data, the three security holes and the one real bug the tests found: **[RESULTS.md](RESULTS.md)**. Raw JSON, scorers and original reports are in [`evidence/`](evidence/).
 

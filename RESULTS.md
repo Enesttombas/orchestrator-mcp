@@ -18,7 +18,7 @@ Model for live runs: `gemini-3.8-flash-high` through a 15-account pool. Dates: 1
 
 ## 1. Before and after the rebuild
 
-<img src="docs/media/scene4.gif" width="800" alt="before and after">
+<img src="docs/media/viz5.gif" width="860" alt="before and after">
 
 | Check | Original server (audit) | Rebuilt |
 |---|---|---|
@@ -34,7 +34,7 @@ Raw: [`evidence/audit/`](evidence/audit/) (rerun with `audit.py`; expected on th
 
 ## 2. Sonnet 5.5 solo vs Gemini orchestration
 
-<img src="docs/media/scene1.gif" width="800" alt="Sonnet vs Gemini">
+<img src="docs/media/viz2.gif" width="860" alt="Sonnet vs Gemini">
 
 | Test | Time A / B (s) | Claude tokens A / B | Quality A | Quality B |
 |---|---|---|---|---|
@@ -50,7 +50,7 @@ Reading: code and fact-finding tied; B was about 21% faster overall and roughly 
 
 ## 3. Domain matrix: 44/46
 
-<img src="docs/media/scene2.gif" width="800" alt="domain matrix">
+<img src="docs/media/viz3.gif" width="860" alt="domain matrix">
 
 Every acceptance script was first proven to **fail** on the untouched sandbox and **pass** on a known-good solution (`test_matrix.py`).
 
@@ -106,7 +106,7 @@ Quota spent on the three matrix runs plus analysis rerun: about 121k tokens, at 
 
 ## 4. Test by angle
 
-<img src="docs/media/scene3.gif" width="800" alt="five angles">
+<img src="docs/media/viz4.gif" width="860" alt="five angles">
 
 | Angle | Result | System defect found | Status |
 |---|---|---|---|
@@ -142,6 +142,7 @@ Six tasks (interval merge, money split, semver, token bucket, cron, weighted LRU
 The real bug: an **empty model answer was classed as non-retryable**, so a task died after one of its three attempts. `Model response did not complete` (SAFETY/OTHER finish) had the same problem. Both are retryable now; the regression test was red before and green after (`test_chaos.py::NativeEmptyAnswers`). These 48 runs predate the fix and were not re-run. `full` vs `clean` stays an **open question**: too few retries (7) to tell, and the failures were provider-side in both arms.
 
 ## 5. Research fidelity
+n<img src="docs/media/viz6.gif" width="860" alt="research fidelity">
 
 Topic: free-threaded Python, six frozen sources, 12 claims each with a verbatim quote of at most 30 words.
 
