@@ -11,6 +11,8 @@ import time
 import unittest
 from unittest.mock import patch
 
+import psutil
+
 import plan
 from pool import ProviderError
 from runner import run
@@ -134,7 +136,9 @@ class HardKill(Base):
             from test_orchestrator import FakePool
             class Slow(FakePool):
                 def complete(self, url, messages, max_tokens=4096, **o):
-                    open({str(started)!r}, "w").write("1")
+                    with open({str(started)!r} + ".tmp", "w") as f:
+                        f.write(str(os.getpid()))
+                    os.replace({str(started)!r} + ".tmp", {str(started)!r})
                     time.sleep(60)
             run(Store({str(self.root / "s.db")!r}), Slow(), {sid!r}, 1, capacity_wait=5)
         ''')
@@ -146,6 +150,11 @@ class HardKill(Base):
                 time.sleep(.1)
             self.assertTrue(started.exists(), 'child never reached the model call')
             self.assertEqual(self.db.task(sid, 'A')['status'], 'IN_PROGRESS')
+            # A Windows venv python.exe is a launcher: the runner is its child and outlives a launcher
+            # kill for a moment. Kill the runner itself and wait until it is gone.
+            runner = psutil.Process(int(started.read_text()))
+            runner.kill()
+            runner.wait(20)
         finally:
             proc.kill()
             proc.wait()
