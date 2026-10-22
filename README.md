@@ -81,6 +81,10 @@ Pool: `orchestrator_refresh_quotas`, `orchestrator_pool_status`, `orchestrator_l
 
 ## License
 
+<<<<<<< HEAD
 Personal research tool. Source is public for viewing; all rights reserved ([LICENSE](LICENSE)). Read [SECURITY.md](SECURITY.md) before running it against any provider account.
 
 The previous README is kept in [docs/NOTES.md](docs/NOTES.md).
+=======
+Licensed under the [Apache License 2.0](LICENSE). Read [SECURITY.md](SECURITY.md) before running it against any provider account.
+>>>>>>> main
