@@ -1,0 +1,62 @@
+{
+ "metrik": "offline unittest suite",
+ "deger": 103,
+ "birim": "test",
+ "komut": "python -m unittest discover -s . -p \"test_*.py\"",
+ "rc": 0,
+ "tarih": "2026-10-22",
+ "makine": "Windows 11, 32 logical CPUs, Python 3.11 venv",
+ "tam_kosu": 6,
+ "temiz_kosu": 4,
+ "temiz_sure_sn": 69,
+ "kosular": [
+  {
+   "rc": 1,
+   "sn": 73.2,
+   "sonuc": "FAILED (failures=1, skipped=1)",
+   "not": "test_chaos.HardKill; ran while another venv install was running"
+  },
+  {
+   "rc": 0,
+   "sn": 65.8,
+   "sonuc": "OK (skipped=1)"
+  },
+  {
+   "rc": 1,
+   "sn": 77.5,
+   "sonuc": "FAILED (failures=1, skipped=1)",
+   "not": "test_chaos.HardKill; ran next to another project's pytest"
+  },
+  {
+   "rc": 0,
+   "sn": 74.0,
+   "sonuc": "OK (skipped=1)"
+  },
+  {
+   "rc": 0,
+   "sn": 72.0,
+   "sonuc": "OK (skipped=1)",
+   "not": "idle machine"
+  },
+  {
+   "rc": 0,
+   "sn": 63.6,
+   "sonuc": "OK (skipped=1)",
+   "not": "idle machine"
+  }
+ ],
+ "hardkill_tek_basina": "3 of 3 OK (python -m unittest test_chaos.HardKill)",
+ "dosya_basina_test": {
+  "test_orchestrator": 39,
+  "test_adaptive": 10,
+  "test_edits": 10,
+  "test_robustness": 10,
+  "test_adversarial": 9,
+  "test_chaos": 6,
+  "test_secrets": 6,
+  "test_speed": 6,
+  "test_bench": 3,
+  "test_plan_overlap": 3,
+  "test_wire_plan": 1
+ }
+}

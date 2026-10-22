@@ -1,0 +1,14 @@
+{
+ "motif": "A",
+ "not": "Editoryal plaka: mevcut sonuç plakalarıyla aynı dil. Kırık beyaz zemin, siyah mürekkep, ince kurallar, limon marker, kontur çip.",
+ "palet": {
+  "zemin": "#f3f2ee",
+  "murekkep": "#161616",
+  "ikincil": "#5f5b53",
+  "kural": "#d8d5cc",
+  "limon": "#c9e36a"
+ },
+ "font": "Segoe UI Semibold / Consolas",
+ "gecis": "yok (statik)",
+ "tarih": "2026-10-22"
+}

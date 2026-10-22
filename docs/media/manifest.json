@@ -1,0 +1,124 @@
+{
+ "varliklar": [
+  {
+   "dosya": "banner.png",
+   "tur": "png",
+   "kaynaklar": [
+    {
+     "yol": "docs/media/data/offline-tests.json",
+     "sha256": "45751f9b8e92392d9d6f0ca85a676e22d43e179f5d32aa1efe3a56c4a9fe9bef"
+    },
+    {
+     "yol": "server.py",
+     "sha256": "1f2c6d3a547b6972c791dba4b97ae46428aa6ac51a09f4eaf99d85c06e3ed51b"
+    }
+   ],
+   "komut": "headless chrome --window-size=1280,640 .vitrin/banner/index.html",
+   "tarih": "2026-10-22",
+   "boyut": 48752
+  },
+  {
+   "dosya": "architecture.svg",
+   "tur": "svg",
+   "kaynaklar": [
+    {
+     "yol": "server.py",
+     "sha256": "1f2c6d3a547b6972c791dba4b97ae46428aa6ac51a09f4eaf99d85c06e3ed51b"
+    },
+    {
+     "yol": "plan.py",
+     "sha256": "c549a46924ae6b4f0f2d0b119549130e13917a11b725682f619789eb535b3156"
+    },
+    {
+     "yol": "store.py",
+     "sha256": "efe78dc32ca47d39025b7925c60888154fe45c2c8b59fc7d0469eac7ad643adc"
+    },
+    {
+     "yol": "locking.py",
+     "sha256": "07afaa025d7370fd61cabde6ea0217ede23afd513fa3603c3df2137449b38e9b"
+    },
+    {
+     "yol": "runner.py",
+     "sha256": "dc7b82e41f7b44e5981e5497248d8178470197d43481058721e85a53dec78ebf"
+    },
+    {
+     "yol": "pool.py",
+     "sha256": "6ac1a72bb2d56d156148eb409b01b7ebcf57440b1f8558a48899d22065c4d509"
+    },
+    {
+     "yol": "execution.py",
+     "sha256": "61143f4e6d53cd369493029e3fcd52064df64c1a269a2eb03665b15fadfb17d8"
+    }
+   ],
+   "komut": ".vitrin/varlik.py",
+   "tarih": "2026-10-22",
+   "boyut": 6484
+  },
+  {
+   "dosya": "numbers.svg",
+   "tur": "svg",
+   "kaynaklar": [
+    {
+     "yol": "docs/media/data/offline-tests.json",
+     "sha256": "45751f9b8e92392d9d6f0ca85a676e22d43e179f5d32aa1efe3a56c4a9fe9bef"
+    }
+   ],
+   "komut": ".vitrin/varlik.py",
+   "tarih": "2026-10-22",
+   "boyut": 5576
+  },
+  {
+   "dosya": "data/offline-tests.json",
+   "tur": "json",
+   "kaynaklar": [
+    {
+     "yol": "test_adaptive.py",
+     "sha256": "c9ad477442e93762100ffbe514e0ab25b2ea35faa6c4007290f2a21feac0505e"
+    },
+    {
+     "yol": "test_adversarial.py",
+     "sha256": "cbbedb9c05f245ab09e9436cbac7a2a39cdc23adc722be362e1540765c7e8823"
+    },
+    {
+     "yol": "test_bench.py",
+     "sha256": "51474ed0553050bbee112ac4d9b13d3279c4f6825bb1a751512e3367536e6f9e"
+    },
+    {
+     "yol": "test_chaos.py",
+     "sha256": "beec2db60a74b6330443fb28846fce1e2d15a4f7f546b709ad17e8a9d6dbbd86"
+    },
+    {
+     "yol": "test_edits.py",
+     "sha256": "370c46e4fc8533f95103669c1cff8825a171dfa07827f4730c75b5df56a7c866"
+    },
+    {
+     "yol": "test_orchestrator.py",
+     "sha256": "5c151ec5ee2ad45abb5530de38f48965e60d96b6aeca772ce752c5016fcca4d9"
+    },
+    {
+     "yol": "test_plan_overlap.py",
+     "sha256": "a797370e75fc0611d4180f4035e252b4554df340a5d08efbafbf1818482873b5"
+    },
+    {
+     "yol": "test_robustness.py",
+     "sha256": "be34f2d7373224b85453327c6db50f9a95cdf4e9600d5190599784ebccf7b190"
+    },
+    {
+     "yol": "test_secrets.py",
+     "sha256": "44db6197be7d40bba5c6c7ab325305c0f617c03554c97c3141337ea9d9319615"
+    },
+    {
+     "yol": "test_speed.py",
+     "sha256": "c9cdcb5a5d3074f7ec85cf1e8132833cb58a67297a84b53c2484397300a53991"
+    },
+    {
+     "yol": "test_wire_plan.py",
+     "sha256": "ccdf506deb76dd986065574e71c4c9786def2b8a2af3e0dbb4779330a4433f6d"
+    }
+   ],
+   "komut": "python -m unittest discover -s . -p \"test_*.py\" (6 runs)",
+   "tarih": "2026-10-22",
+   "boyut": 1339
+  }
+ ]
+}

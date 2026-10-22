@@ -8,3 +8,6 @@ __pycache__/
 backups/
 auth/
 *.log
+
+# README vitrin intermediates
+.vitrin/
