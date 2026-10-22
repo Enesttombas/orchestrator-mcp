@@ -24,4 +24,4 @@
 
 ## Before reusing this code
 
-The licence is all-rights-reserved. Resolve risk 1 before running this against any provider account.
+The code is licensed under Apache-2.0. Resolve risk 1 before running this against any provider account.

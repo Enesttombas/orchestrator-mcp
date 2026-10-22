@@ -56,4 +56,4 @@ Pool: `orchestrator_refresh_quotas`, `orchestrator_pool_status`, `orchestrator_l
 
 Task workspaces are temporary copies, not an OS sandbox. Acceptance commands and generated code run with your user rights. Workers see only the files you list. Cancelling an in-flight HTTP call can take up to 120 seconds.
 
-Personal research tool. Source is public for viewing; all rights reserved ([LICENSE](LICENSE)). Read [SECURITY.md](SECURITY.md) before running it against any provider account.
+Licensed under the [Apache License 2.0](LICENSE). Read [SECURITY.md](SECURITY.md) before running it against any provider account.
