@@ -81,6 +81,6 @@ Havuz: `orchestrator_refresh_quotas`, `orchestrator_pool_status`, `orchestrator_
 
 ## Lisans
 
-Kişisel araştırma aracı. Kaynak yalnız inceleme için açık; tüm hakları saklıdır ([LICENSE](LICENSE)). Herhangi bir sağlayıcı hesabına karşı çalıştırmadan önce [SECURITY.md](SECURITY.md)'yi oku.
+[Apache Lisansı 2.0](LICENSE) ile lisanslıdır. Herhangi bir sağlayıcı hesabına karşı çalıştırmadan önce [SECURITY.md](SECURITY.md)'yi oku.
 
 Önceki README [docs/NOTES.md](docs/NOTES.md) içinde duruyor.
